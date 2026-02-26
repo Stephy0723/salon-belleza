@@ -1,0 +1,75 @@
+[
+  {
+    "id": "kit-hidratacion-premium",
+    "tipo": "Capilar",
+    "nombre": "Kit Hidratacion Premium",
+    "descripcion": "Shampoo, acondicionador y mascarilla para reparar y dar brillo intenso.",
+    "precio": 2850,
+    "precioAnterior": 3200,
+    "imagen": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "shampoo-hidratante",
+    "tipo": "Capilar",
+    "nombre": "Shampoo Hidratante Salon Pro",
+    "descripcion": "Limpieza suave para cabello seco o tratado.",
+    "precio": 950,
+    "imagen": "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "acondicionador-repair",
+    "tipo": "Capilar",
+    "nombre": "Acondicionador Repair",
+    "descripcion": "Nutricion y suavidad para uso diario.",
+    "precio": 1100,
+    "imagen": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "serum-anti-frizz",
+    "tipo": "Capilar",
+    "nombre": "Serum Anti-Frizz",
+    "descripcion": "Control de frizz y proteccion termica.",
+    "precio": 800,
+    "imagen": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "esmalte-profesional",
+    "tipo": "Unas",
+    "nombre": "Esmalte Profesional",
+    "descripcion": "Color intenso y secado rapido para retoques en casa.",
+    "precio": 450,
+    "imagen": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "aceite-cuticulas",
+    "tipo": "Unas",
+    "nombre": "Aceite de Cuticulas",
+    "descripcion": "Hidratacion diaria para fortalecer unas y contorno.",
+    "precio": 390,
+    "imagen": "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "pincho-pollo",
+    "tipo": "Snack Bar",
+    "nombre": "Pincho de Pollo",
+    "descripcion": "Pincho al grill servido caliente mientras esperas tu turno.",
+    "precio": 220,
+    "imagen": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "pincho-mixto",
+    "tipo": "Snack Bar",
+    "nombre": "Pincho Mixto",
+    "descripcion": "Combinacion de pollo y vegetales con salsa de la casa.",
+    "precio": 260,
+    "imagen": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "jugo-natural",
+    "tipo": "Bebidas",
+    "nombre": "Jugo Natural",
+    "descripcion": "Frutas frescas de temporada sin conservantes.",
+    "precio": 180,
+    "imagen": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=900&q=80"
+  }
+]

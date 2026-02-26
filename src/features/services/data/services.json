@@ -1,0 +1,122 @@
+[
+  {
+    "id": "lavado-capilar",
+    "categoria": "Cabello",
+    "nombre": "Lavado Capilar Profesional",
+    "descripcion": "Lavado con productos de salon, masaje capilar y preparacion para peinado.",
+    "duracionMin": 30,
+    "precioDesde": 500,
+    "imagen": "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "secado-brushing",
+    "categoria": "Cabello",
+    "nombre": "Secado y Brushing",
+    "descripcion": "Secado con tecnica profesional para un acabado pulido, con volumen y brillo.",
+    "duracionMin": 45,
+    "precioDesde": 850,
+    "imagen": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "planchado-liso",
+    "categoria": "Cabello",
+    "nombre": "Planchado y Alisado Temporal",
+    "descripcion": "Control de frizz y acabado liso con protector termico y sellado de puntas.",
+    "duracionMin": 50,
+    "precioDesde": 900,
+    "imagen": "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "queratina-capilar",
+    "categoria": "Tratamientos",
+    "nombre": "Tratamiento de Queratina",
+    "descripcion": "Nutricion profunda y control de volumen para un cabello mas suave y manejable.",
+    "duracionMin": 150,
+    "precioDesde": 4500,
+    "imagen": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "alisado-profesional",
+    "categoria": "Tratamientos",
+    "nombre": "Alisado Profesional",
+    "descripcion": "Servicio de alisado de larga duracion con evaluacion previa del tipo de cabello.",
+    "duracionMin": 180,
+    "precioDesde": 5500,
+    "imagen": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "hidratacion-intensiva",
+    "categoria": "Tratamientos",
+    "nombre": "Hidratacion Intensiva",
+    "descripcion": "Mascarilla reparadora con vapor para recuperar elasticidad, brillo y suavidad.",
+    "duracionMin": 70,
+    "precioDesde": 1800,
+    "imagen": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=900&q=80",
+    "destacado": false
+  },
+  {
+    "id": "corte-dama",
+    "categoria": "Corte y Estilo",
+    "nombre": "Corte de Dama",
+    "descripcion": "Diseno de corte personalizado segun forma del rostro y textura del cabello.",
+    "duracionMin": 55,
+    "precioDesde": 1200,
+    "imagen": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "peinado-evento",
+    "categoria": "Corte y Estilo",
+    "nombre": "Peinado de Evento",
+    "descripcion": "Peinado elegante para bodas, graduaciones y eventos especiales.",
+    "duracionMin": 90,
+    "precioDesde": 2200,
+    "imagen": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80",
+    "destacado": false
+  },
+  {
+    "id": "manicure-gel",
+    "categoria": "Unas",
+    "nombre": "Manicure en Gel",
+    "descripcion": "Limpieza, forma y esmaltado en gel con acabado brillante de larga duracion.",
+    "duracionMin": 60,
+    "precioDesde": 1300,
+    "imagen": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80",
+    "destacado": true
+  },
+  {
+    "id": "pedicure-spa",
+    "categoria": "Unas",
+    "nombre": "Pedicure Spa",
+    "descripcion": "Exfoliacion, hidratacion y esmaltado para pies suaves y bien cuidados.",
+    "duracionMin": 70,
+    "precioDesde": 1500,
+    "imagen": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80",
+    "destacado": false
+  },
+  {
+    "id": "maquillaje-social",
+    "categoria": "Maquillaje",
+    "nombre": "Maquillaje Social",
+    "descripcion": "Maquillaje profesional con productos de alta fijacion para lucir impecable.",
+    "duracionMin": 60,
+    "precioDesde": 2000,
+    "imagen": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80",
+    "destacado": false
+  },
+  {
+    "id": "cejas-pestanas",
+    "categoria": "Rostro",
+    "nombre": "Diseno de Cejas y Pestanas",
+    "descripcion": "Perfilado de cejas y lifting de pestanas para potenciar tu mirada.",
+    "duracionMin": 50,
+    "precioDesde": 1400,
+    "imagen": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80",
+    "destacado": false
+  }
+]

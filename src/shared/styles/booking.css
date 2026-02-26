@@ -1,0 +1,125 @@
+/* ===============================
+   BOOKING WRAPPER
+================================ */
+
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 5rem 0;
+}
+.section-heading.center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-heading h1 {
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.section-heading p {
+  color: #666;
+  line-height: 1.7;
+}
+.booking-layout {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 1000px) {
+  .booking-layout {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+}
+.booking-info {
+  background: linear-gradient(135deg, #d76da2, #ec9fc7);
+  color: white;
+  padding: 3rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 30px 70px rgba(215,109,162,0.25);
+}
+
+.booking-info h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.booking-info ul {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.booking-info li {
+  line-height: 1.6;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.booking-form {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+  background: #fafafa;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: #d76da2;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(215,109,162,0.12);
+}
+.booking-form .btn-primary {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, #d76da2, #ec9fc7);
+  border: none;
+  transition: 0.4s ease;
+}
+
+.booking-form .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(215,109,162,0.35);
+}
+.reveal-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

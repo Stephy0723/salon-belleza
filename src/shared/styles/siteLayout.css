@@ -1,0 +1,356 @@
+/* ===============================
+   SITE SHELL
+================================ */
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+main {
+  flex: 1;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+/* BRAND */
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #111;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+/* NAV */
+
+.site-nav {
+  display: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #444;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #d76da2, #ec9fc7);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link-active::after {
+  width: 100%;
+}
+
+.nav-link-active {
+  color: #111;
+}
+
+/* CTA BUTTON */
+
+.header-cta {
+  background: linear-gradient(120deg, #d76da2, #ec9fc7);
+  color: white;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(215, 109, 162, 0.35);
+}
+
+.header-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(215, 109, 162, 0.45);
+}
+
+/* Desktop Nav */
+
+@media (min-width: 900px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+.site-footer {
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+  color: #f5f5f5;
+  padding: 4rem 0 2rem;
+  margin-top: 6rem;
+}
+
+.footer-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.footer-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+/* Responsive grid */
+@media (min-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  }
+}
+
+/* ===============================
+   BRAND
+================================ */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.footer-brand p {
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   LINKS
+================================ */
+
+.footer-grid h4 {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* ===============================
+   SOCIAL
+================================ */
+
+.footer-social {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: linear-gradient(135deg, #d76da2, #ea9ec5);
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   NEWSLETTER
+================================ */
+
+.footer-small {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  color: #222;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+}
+
+.footer-newsletter input:focus {
+  outline: none;
+  border-color: #d76da2;
+  box-shadow: 0 0 0 3px rgba(215, 109, 162, 0.2);
+}
+
+.footer-newsletter button {
+  background: linear-gradient(135deg, #d76da2, #ea9ec5);
+  border: none;
+  color: white;
+  padding: 0 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.footer-email {
+  color: #d76da2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-email:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   BOTTOM ROW
+================================ */
+
+.footer-bottom-row {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #9a9a9a;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-legal a {
+  color: #9a9a9a;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   SKIP LINK (Accesibilidad)
+================================ */
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Solo aparece cuando recibe focus (tecla TAB) */
+
+.skip-link:focus {
+  top: 20px;
+  outline: none;
+}
+
+/* Estilo más elegante al hacer focus */
+
+.skip-link:focus-visible {
+  background: linear-gradient(135deg, #d76da2, #ea9ec5);
+  color: white;
+}

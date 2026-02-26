@@ -1,0 +1,53 @@
+/* ===============================
+   VARIABLES
+================================ */
+
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --pink-soft: #f6e9f0;
+  --pink-accent: #d48fb1;
+
+  --text-main: #1a1a1a;
+  --text-soft: #6e6e6e;
+  --border-light: #ececec;
+
+  --radius: 16px;
+  --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.06);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 3rem;
+  --space-5: 5rem;
+
+  --max-width: 1200px;
+}
+
+/* ===============================
+   RESET
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-main);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.container {
+  width: min(92%, var(--max-width));
+  margin: auto;
+}

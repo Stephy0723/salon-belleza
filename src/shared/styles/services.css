@@ -1,0 +1,522 @@
+/* =========================================
+   SALON PAGE WRAPPER
+========================================= */
+
+.salon-page {
+  padding: 6rem 0 7rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #faf7f9 40%,
+    #ffffff 100%
+  );
+  display: grid;
+  gap: 6rem;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.salon-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.salon-hero .eyebrow {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #d76da2;
+}
+
+.salon-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.salon-hero p {
+  color: #6e6e6e;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* =========================================
+   HIGHLIGHTS CARDS
+========================================= */
+
+.salon-highlights {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .salon-highlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.highlight-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 22px;
+  border: 1px solid #f0e6ed;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px rgba(215, 109, 162, 0.12);
+}
+
+.highlight-card h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-card p {
+  color: #7a7a7a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+  display: grid;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #d76da2;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* =========================================
+   SHOP HEADING SPACING
+========================================= */
+
+.salon-shop-heading {
+  margin-top: 3rem;
+}
+
+/* =========================================
+   CONTAINER ADJUSTMENTS
+========================================= */
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   SOFT REVEAL ANIMATION
+========================================= */
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.15s;
+}
+
+.delay-2 {
+  animation-delay: 0.3s;
+}
+
+.delay-3 {
+  animation-delay: 0.45s;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   CATALOG WRAPPER
+========================================= */
+
+.service-catalog {
+  display: grid;
+  gap: 3.5rem;
+}
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.service-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-toolbar input,
+.service-toolbar select {
+  background: #ffffff;
+  border: 1px solid #e8e1e6;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  min-width: 220px;
+  transition: all 0.3s ease;
+}
+
+.service-toolbar input:focus,
+.service-toolbar select:focus {
+  outline: none;
+  border-color: #d76da2;
+  box-shadow: 0 0 0 4px rgba(215, 109, 162, 0.12);
+}
+
+/* =========================================
+   CATEGORY PILLS
+========================================= */
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pill {
+  border: 1px solid #e5d9e1;
+  background: #ffffff;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pill:hover {
+  border-color: #d76da2;
+  color: #d76da2;
+}
+
+.pill-active {
+  background: linear-gradient(120deg, #d76da2, #ec9fc7);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* =========================================
+   RESULT COUNTER
+========================================= */
+
+.result-counter {
+  font-size: 0.85rem;
+  color: #777;
+  letter-spacing: 0.05em;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.cards-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.service-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #f1e8ee;
+  transition: all 0.45s ease;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(215, 109, 162, 0.15);
+}
+
+/* IMAGE */
+
+.service-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+/* BODY */
+
+.card-body {
+  padding: 1.8rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+/* CHIP */
+
+.chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #fdf2f8;
+  color: #b14a7d;
+  font-weight: 600;
+}
+
+/* TITLE */
+
+.card-body h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* DESCRIPTION */
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* META */
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #f1e8ee;
+}
+
+.meta-row strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* =========================================
+   FEATURED GRID (cuando featuredOnly = true)
+========================================= */
+
+.cards-grid[aria-label="Servicios destacados"] .service-card {
+  background: linear-gradient(145deg, #ffffff, #faf6f9);
+  border: 1px solid #f0dbe7;
+}
+/* ===============================
+   PRODUCT SHOWCASE LUXURY
+================================ */
+
+.product-showcase {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.06);
+}
+
+/* Desktop layout */
+@media (min-width: 1000px) {
+  .product-showcase {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+/* ===============================
+   IMAGE SIDE
+================================ */
+
+.product-visual {
+  position: relative;
+}
+
+.product-visual img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  transition: transform 0.6s ease;
+}
+
+.product-visual img:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   INFO SIDE
+================================ */
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* TAG */
+
+.chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: #f7e6ef;
+  color: #b14a7d;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* TITLE */
+
+.product-info h3 {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* DESCRIPTION */
+
+.product-info p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* ===============================
+   PRICE BLOCK
+================================ */
+
+.price-stack {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.price-stack strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* ===============================
+   META
+================================ */
+
+.product-meta {
+  font-size: 0.85rem;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* ===============================
+   QTY + TOTAL
+================================ */
+
+.qty-row {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: #faf7f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qty-row label {
+  font-weight: 600;
+}
+
+.qty-row input {
+  width: 80px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.qty-row strong {
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.product-info .btn-primary {
+  margin-top: 1rem;
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  background: linear-gradient(120deg, #d76da2, #ec9fc7);
+  box-shadow: 0 10px 25px rgba(215, 109, 162, 0.35);
+  transition: all 0.4s ease;
+}
+
+.product-info .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(215, 109, 162, 0.45);
+}

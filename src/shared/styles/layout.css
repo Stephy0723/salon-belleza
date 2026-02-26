@@ -1,0 +1,107 @@
+/* =========================================
+   FOOTER — LUXURY MINIMAL
+========================================= */
+
+.site-footer {
+  background: var(--white);
+  border-top: 1px solid var(--border-light);
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+}
+
+/* Contenedor principal */
+.footer-container {
+  width: min(92%, var(--max-width));
+  margin: auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Grid superior */
+.footer-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Logo / marca */
+.footer-brand h3 {
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+.footer-brand p {
+  color: var(--text-soft);
+  margin-top: var(--space-1);
+  max-width: 35ch;
+}
+
+/* Links */
+.footer-links {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: var(--space-1);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--black);
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer-newsletter h4 {
+  font-style: italic;
+}
+
+.footer-newsletter input {
+  padding: 0.8rem;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+}
+
+.footer-newsletter button {
+  padding: 0.8rem;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background: var(--pink-accent);
+}
+
+/* Parte inferior */
+.footer-bottom {
+  border-top: 1px solid var(--border-light);
+  margin-top: var(--space-4);
+  padding: var(--space-3) 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+/* Responsive */
+@media (min-width: 920px) {
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+  }
+}
